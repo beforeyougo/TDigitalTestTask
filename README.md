@@ -1,10 +1,20 @@
 # T-Digital Test Task
 Entrance task from the AlgoQuant company for Mikhail Pravdukhin.
 
+## Project navigation
+
+- [OrderBook](https://github.com/beforeyougo/TDigitalTestTask/tree/main/OrderBook): Visual Studio C++ project for the task of processing order book updates
+    - [OrderBook/OrderBook/data](https://github.com/beforeyougo/TDigitalTestTask/tree/main/OrderBook/OrderBook/data): data used by the project
+    - [OrderBook/OrderBook/results](https://github.com/beforeyougo/TDigitalTestTask/tree/main/OrderBook/OrderBook/results): directory with the resulting file
+    - [OrderBook/OrderBook/tests](https://github.com/beforeyougo/TDigitalTestTask/tree/main/OrderBook/OrderBook/tests): simple tests that were used to debug the project
+- [MidPriceForecast](https://github.com/beforeyougo/TDigitalTestTask/tree/main/MidPriceForecast): Jupyter notebook for the task of forecasing the mid price change
+---
+
 ## Contents
 
 - [OrderBook C++ project](#orderbook-c-project)
 - [MidPriceForecast Jupyter notebook](#midpriceforecast-jupyter-notebook)
+
 
 ## OrderBook C++ project
 
