@@ -1,5 +1,8 @@
-# TDigitalTestTask
+# T-Digital Test Task
 Entrance task from the AlgoQuant company for Mikhail Pravdukhin.
+
+- [OrderBook C++ project](#orderbook-c-project)
+- [MidPriceForecast Jupyter notebook](#midpriceforecast-jupyter-notebook)
 
 ## OrderBook C++ project
 
@@ -12,7 +15,7 @@ The task is to write a C++ programm that takes two csv files as input:
 Both files have the same structure: *TimeStamp,OrderType(bid or ask),Price,Quantity*.  
 The programm must process all sync shots and updates and log the best bid and ask prices for each unique timestamp to the results.csv file. All updates happened before the first sync shot shoud be ignored. For the set of same timestamp the programm must log information only for the last update in the sequence. If an update has the same timestamp as the current sync shot, the sync shot should be processed first.  
 
-In addition to best prices, the programm should calculate information metrics using the current order book state. These metrics will be used to forecast the mid price movement in the python part.
+In addition to best prices, the programm should calculate information metrics using the current order book state. These metrics will be used to forecast the mid price movement in the [python part](#midpriceforecast-jupyter-notebook).
 
 ### Solution
 #### How to efficiently store orders?
@@ -57,3 +60,4 @@ Possible way to run the program using the Windows command line:
 
     $ start OrderBook.exe <path to syncshots file> <path to updates file> <path to resulting folder (optional)> 
   
+## MidPriceForecast Jupyter notebook
