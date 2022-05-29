@@ -1,6 +1,8 @@
 # T-Digital Test Task
 Entrance task from the AlgoQuant company for Mikhail Pravdukhin.
 
+## Contents
+
 - [OrderBook C++ project](#orderbook-c-project)
 - [MidPriceForecast Jupyter notebook](#midpriceforecast-jupyter-notebook)
 
