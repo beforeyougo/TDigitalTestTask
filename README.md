@@ -63,3 +63,9 @@ Possible way to run the program using the Windows command line:
     $ start OrderBook.exe <path to syncshots file> <path to updates file> <path to resulting folder (optional)> 
   
 ## MidPriceForecast Jupyter notebook
+
+### Problem
+The task is to use features to predict the future mid price change.
+
+### Solution
+The main idea of the solution is to use the Random Forest model to predict the mid price using the dataset preprocessed by the [C++ project](#orderbook-c-project). The model is trained on the separate training dataset and validated using the out-of-bag sample. Then its R2 score is evaluated on the testing dataset. The described procedure is performed for differend periods of forecasting: 300 ms, 1s, 5s, 30s, 1min. For more details, see MidPriceForecast/MidPriceForecast.ipynb.
