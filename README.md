@@ -19,15 +19,15 @@ Entrance task from the T-Digital company for Mikhail Pravdukhin.
 ## OrderBook C++ project
 
 ### Problem
-The task is to write a C++ programm that takes two csv files as input:  
+The task is to write a C++ program that takes two csv files as input:  
 * sync shots - contains the initial state of the orderbook
 * updates - contains consecutive updates of the order book
 
 
 Both files have the same structure: *TimeStamp,OrderType(bid or ask),Price,Quantity*.  
-The programm must process all sync shots and updates and log the best bid and ask prices for each unique timestamp to the results.csv file. All updates happened before the first sync shot shoud be ignored. For the set of same timestamp the programm must log information only for the last update in the sequence. If an update has the same timestamp as the current sync shot, the sync shot should be processed first.  
+The program must process all sync shots and updates and log the best bid and ask prices for each unique timestamp to the results.csv file. All updates happened before the first sync shot shoud be ignored. For the set of same timestamp the program must log information only for the last update in the sequence. If an update has the same timestamp as the current sync shot, the sync shot should be processed first.  
 
-In addition to best prices, the programm should calculate information metrics using the current order book state. These metrics will be used to forecast the mid price movement in the [python part](#midpriceforecast-jupyter-notebook).
+In addition to best prices, the program should calculate information metrics using the current order book state. These metrics will be used to forecast the mid price movement in the [python part](#midpriceforecast-jupyter-notebook).
 
 ### Solution
 #### How to efficiently store orders?
@@ -36,7 +36,7 @@ It is essential to take into account following points while developing the code 
 * Each price level is unique in the order book
 * If order book receives an update with zero quantity, corresponding price level is deleted
 
-The programm uses the stl map container to store orders of each type - one map for bids and one map for asks. The key is the price value converted to cents, the value is the order quantity. What are the advantages of such approach:
+The program uses the stl map container to store orders of each type - one map for bids and one map for asks. The key is the price value converted to cents, the value is the order quantity. What are the advantages of such approach:
 * Map is memory efficient: is uses O(n) memory
 * Updating of the existing order, inserting new order and deleting have O(logn) complexity in the worst case
 
