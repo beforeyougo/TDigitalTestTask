@@ -1,5 +1,5 @@
 # T-Digital Test Task
-Entrance task from the AlgoQuant company for Mikhail Pravdukhin.
+Entrance task from the T-Digital company for Mikhail Pravdukhin.
 
 ## Project navigation
 
