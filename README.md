@@ -56,7 +56,7 @@ $VI = \frac{b - a}{b + a}$
 $-1 \leq VI \leq 1$  
 Shows the dominance of buyers of sellers in terms of volume.
 4. Dollar Imbalance  
-$d_i = |p_i - p_{mid}|, p_mid = \frac{best bid + best ask}{2}$  
+$d_i = |p_i - p_{mid}|, p_{mid} = \frac{best bid + best ask}{2}$  
 $b = \sum\limits_{bids}{d_i}, a = \sum\limits_{asks}{d_i}$  
 $DI = \frac{b - a}{b + a}$  
 $-1 \leq DI \leq 1$  
@@ -66,7 +66,7 @@ Shows the dominance of buyers of sellers in terms of money.
 This is a C++ Visual Studio project. Therefore, it is highly recommended that you create it using the Visual Studio environment, because no makefile is provided. The project is written in the C++20 standard.
 
 ### How to run the project
-The easiest way is to run it is to use the Visual Studio envirnoment. The program accepts two command line arguments: path to the sync shots file and path to the updates file. Both arguments are already stated in the commited configuration file (OrderBook.vcxproj.user). By default the program creates the *results* folder in the executable directory and saves the *results.csv* file there. But it is possible to specify where you want to save the resulting file passing the third argument.
+The easiest way is to run it using the Visual Studio envirnoment. The program accepts two command line arguments: path to the sync shots file and path to the updates file. Both arguments are already stated in the commited configuration file (OrderBook.vcxproj.user). By default the program creates the *results* folder in the executable directory and saves the *results.csv* file there. But it is possible to specify where you want to save the resulting file passing the third argument.
 
 Possible way to run the program using the Windows command line:  
 
