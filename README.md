@@ -57,7 +57,7 @@ $-1 \leq VI \leq 1$
 Shows the dominance of buyers of sellers in terms of volume.
 4. Dollar Imbalance  
 $d_i = |p_i - p_{mid}|, p_{mid} = \frac{best bid + best ask}{2}$  
-$b = \sum\limits_{bids}{d_i}, a = \sum\limits_{asks}{d_i}$  
+$b = \sum\limits_{bids}{d_i * q_i}, a = \sum\limits_{asks}{d_i * q_i}$  
 $DI = \frac{b - a}{b + a}$  
 $-1 \leq DI \leq 1$  
 Shows the dominance of buyers of sellers in terms of money.  
